@@ -15,15 +15,13 @@ function akanFunction() {
   day = parseInt(cd);
 
 
-  var century = parseInt((year) / 100);
-  var formula = ( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day) % 7
+  var century = parseInt((year) / 100+1);
+  var formula  = ( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day ) %7;
   var maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
   var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Afua", "Afua", "Ama"];
   var dayOfMonth = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   var dayIndex = Math.floor(formula);
-  
-
-
+      dayIndex -=1
 if (year > 0 && year < 2021) {
     if (month > 0 && month < 13) {
       if (day > 0 && day < 32) {
