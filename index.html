@@ -15,37 +15,29 @@
         <p>Akan names come from a traditional naming system for people from countries such as Togo, Ivory Coast and Ghana. A child’s name is determined by factors surrounding his or her birth. For example, the day of their birth or the manner in which they were born may determine which name they get irrespective of their gender. These Akan names signify the day one is born. According to Akan tradition, each child is born with a name associated to their soul. The day the child is born is therefore determined by the soul. The well thought and organized naming system of the Akan’s was initiated by the ancestors and has attracted so many people’s attention as they desire to know more about these names. As a matter of fact, it is possible to tell what led to someone’s birth, the day they were born and their rank among the siblings just by their names.</p>
         <p>KNOW YOUR AKAN NAME!!!JUST FILL IN THE FORM BELOW 👇 👇 👇 </p>
 
-        <form>
-            <div>
-                <div>
-                    <p id="output"></p>
-                    <label>First Name.</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter" required>
-                    <label>Year</label>
-                    <input type="number" class="form-control" id="year" placeholder="Enter the year." required
-                        min="1980" max="2020" >
-                    <label>Month</label>
-                    <input type="number" class="form-control" id="month" placeholder="Enter the month" required min="1"
-                        max="12">
+        <form class="forms">
+               <div class="form-group">
+                 <label for="year" class="labels">Year:</label>
+                 <input type="number" class="yr" name="year" placeholder="e.g 2000" id="year" required>
+               </div>
+               <div class="form-group">
+                 <label for="month" class="labels">Month:</label>
+                 <input type="number" class="mth" name="month" placeholder="e.g 12" id="month" required>
+               </div>
+               <div class="form-group">
+                 <label for="day" class="labels">Day of month:</label>
+                 <input type="number" class="day" name="day" placeholder="e.g 30" id="dayOfMonth" required>
+               </div>
+               <div class="radio-button" id="gender">
+                 <input type="radio" class="genders labels" id="rad1" name="gender" checked required>Male
+                 <input type="radio" class="genders labels" id="rad2" name="gender" required>Female
+               </div>
+               <br>
+               <button type="button" value="Submit" name="Button" onclick="akanFunction()">Submit</button>
+             </form>
 
-                    <label>Date</label>
-                    <input type="number" class="form-control" id="day" placeholder="Enter the day" required min="1"
-                        max="31"><br>
-                </div>
-                <div class="ggg">
-                  <select class="form-control" name="" id="Gender">
-                    <option value="Female">Female</option>
-                    <option value="Male">Male</option>
-                    </select><br>
-                </div>
-            </div>
-            <a onclick="submission()" class="btn btn-outline-info btn-lg">Submit</a>
+             <h1 id="result"><strong>Name</strong></h1>
 
-            <button type="reset" class="btn btn-outline-info btn-lg">Reset</button>
-
-        </form>
-
-    </div>
   <script src="js/scripts.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
