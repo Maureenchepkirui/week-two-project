@@ -1,6 +1,9 @@
 function akanFunction() {
-  var ay, bm, cd;
-  var male, female;
+  var ay;
+  var bm;
+  var cd;
+  var male;
+  var female;
 
   ay = parseInt(document.getElementById('year').value);
   bm = parseInt(document.getElementById('month').value);
@@ -35,14 +38,14 @@ function akanFunction() {
         }
 
       } else {
-        alert("Input the correct date e.g 30");
+        alert("INVALID DAY!");
       }
 
     } else {
-      alert("Input the correct month e.g 12");
+      alert("INVALID MONTH!");
     }
 
   } else {
-    alert("input the correct year e.g 2019");
+    alert("INVALID YEAR!");
   }
 }
