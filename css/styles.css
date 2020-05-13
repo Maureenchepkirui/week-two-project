@@ -1,8 +1,25 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Felipa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Felipa&family=Goblin+One&display=swap');
+
 body {
-  background-color: lightblue;
+  background-image: url('../image/ghana.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Felipa', cursive;
+  color: red;
+  font-size: 20px;
 }
 h1 {
   font-size: 20px;
-  background-color: pink;
+  font-family: 'Felipa', cursive;
+  font-size: 30px;
+
+  }
+p{
+  font-family: 'Goblin One', cursive;
+
+
 
 }
